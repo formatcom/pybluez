@@ -2,6 +2,12 @@ PyBluez CHANGELOG file
 
 this file contains a list of changes through the different versions of PyBluez.
 
+changes from 0.30 to 0.31 (September 22, 2021)
+---------------------------------------------
+
+Fix:
+  - hci_send_req: DeprecationWarning: PY_SSIZE_T_CLEAN will be required for '#' formats.
+
 
 changes from 0.23 to 0.30 (unreleased)
 --------------------------------------

@@ -16,7 +16,6 @@ Local naming conventions:
 - names starting with bt_ are module-level functions
 
 */
-#include "Python.h"
 #include "btmodule.h"
 #include "structmember.h"
 
@@ -1991,7 +1990,8 @@ static PyObject *
 bt_hci_send_cmd(PyObject *self, PyObject *args)
 {
     PySocketSockObject *socko = NULL;
-    int err, plen = 0;
+    int err;
+    Py_ssize_t plen = 0;
     uint16_t ogf, ocf;
     char *param = NULL;
     int dd = 0;
